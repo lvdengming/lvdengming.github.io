@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --common-bg-blog-color: #539e56;
+    --common-bg-h5-demos-color: #ecc25a;
+    --common-text-color: #191919;
+    --common-text-link-color: #6a9af1;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.blog {
+    background-color: var(--common-bg-blog-color);
+}
+
+section.h5-demos {
+    background-color: var(--common-bg-h5-demos-color);
+}
+
+section .content {
+    width: 50vw;
+    height: 50vh;
+    font-size: 16px;
+    color: var(--common-text-color);
+}
+
+.content .title {
+    font-size: 24px;
+}
+
+.content .description {
+    margin-top: 24px;
+}
+
+.content .link-wrapper {
+    margin-top: 16px;
+    text-align: right;
+}
+
+.content .link-wrapper a {
+    color: var(--common-text-link-color);
+}
