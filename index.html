@@ -1,31 +1,92 @@
+<!--
+ * @Author: lvdengming@foxmail.com
+ * @Date: 2024-09-22 23:37:43
+ * @LastEditors: lvdengming@foxmail.com
+ * @LastEditTime: 2025-04-12 12:05:58
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dengming's Home</title>
+        <title>个人作品展示</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
     </head>
-
     <body>
-        <section class="blog">
-            <div class="content">
-                <h1 class="title">Personal Blogs</h1>
-                <p class="description">A personal blog page.</p>
-                <div class="link-wrapper">
-                    <a href="/blog">立即前往</a>
+        <!-- 粒子背景 -->
+        <div id="particles"></div>
+
+        <!-- 头部区域 -->
+        <header class="header">
+            <div class="hero-content">
+                <h1>我的创意空间</h1>
+                <p class="subtitle">个人作品集 | 博客与H5互动案例展示</p>
+                <a href="#works" class="card-link">探索作品</a>
+            </div>
+            <div class="scroll-down" id="scrollDown">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <!-- 作品展示区 -->
+        <section class="works-section" id="works">
+            <h2 class="section-title">精选作品</h2>
+            <div class="work-cards">
+                <!-- 个人博客卡片 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                            src="https://s2.loli.net/2025/04/12/1KsMyBHap7RrZ8z.png"
+                            alt="个人博客展示图"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">个人博客</h3>
+                        <p class="card-description">
+                            这是我的个人博客平台，分享我对技术、设计和创意的思考。内容涵盖前端开发、UI/UX设计、创意灵感和个人经验分享。
+                        </p>
+                        <a href="https://lvdengming.github.io/blog" class="card-link">访问博客</a>
+                    </div>
+                </div>
+
+                <!-- H5案例卡片 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                            src="https://s2.loli.net/2025/04/12/WBYGsUvt8j5miLO.png"
+                            alt="H5作品展示图"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">H5互动案例</h3>
+                        <p class="card-description">
+                            这是我设计的H5互动案例集合，包含多个创意十足的移动端交互体验作品。每个作品都注重用户体验和视觉效果的完美结合。
+                        </p>
+                        <a href="https://lvdengming.github.io/demo" class="card-link">查看案例</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="h5-demos">
-            <div class="content">
-                <h1 class="title">H5 Demos</h1>
-                <p class="description">A personal h5 demos collection.</p>
-                <div class="link-wrapper">
-                    <a href="/demo">立即前往</a>
-                </div>
+        <!-- 页脚区域 -->
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/lvdengming" class="social-icon"
+                    ><i class="fab fa-github"></i
+                ></a>
+                <a href="mailto:lvdengming@foxmail.com" class="social-icon"
+                    ><i class="fab fa-envelope"></i
+                ></a>
+                <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
-        </section>
+            <p class="copyright">© 2025 我的创意空间. 保留所有权利</p>
+        </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>
